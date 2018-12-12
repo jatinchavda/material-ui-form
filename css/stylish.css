@@ -1,0 +1,38 @@
+/* Stylish form */
+.input-box { padding: 20px 0;position: relative; }
+.input-box input,  .input-box textarea { 
+  color: #555;
+  font-size: 14px;
+  padding: 6px 10px 6px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+  line-height: 1.32;
+  outline: none;
+}
+.input-box input:focus, .input-box textarea:focus{
+  border-bottom: 2px solid #144e8d;
+  padding-bottom: 5px;
+}
+.input-box label {
+    color: #333;
+    font-size: 13px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 25px;
+    transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -webkit-transition: 0.5s ease all;
+    width: 100%;
+}
+.input-box input:focus ~ label, .input-box textarea:focus ~ label, 
+.input-box input.edited ~ label, .input-box textarea.edited ~ label {
+    top: 2px;
+    font-size: 15px;
+    color: #144e8d;
+    left: 0;
+}
+/* Stylish form */
